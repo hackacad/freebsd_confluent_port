@@ -24,33 +24,33 @@ set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${CMAKE_SOURCE_DIR})
 
 # Eliminates warning about linker paths when linking both zlib and
 # liblzma.
-#cmake_policy(SET CMP0003 NEW)
-
+cmake_policy(SET CMP0003 NEW)
+set(CMAKE_VERBOSE_MAKEFILE ON)
 #-----------------------------------------------------------------------
 # Retrieve the current version number
 
 if (UNIX)
-#    execute_process(COMMAND ${CMAKE_CURRENT_SOURCE_DIR}/version.sh project
-#        WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}
-#     execute_process(COMMAND /usr/home/BachelorThesis/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/version.sh project
-#         WORKING_DIRECTORY /usr/home/BachelorThesis/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/
-#        RESULT_VARIABLE AVRO_VERSION_RESULT
-#        OUTPUT_VARIABLE AVRO_VERSION
-#        OUTPUT_STRIP_TRAILING_WHITESPACE)
-#    if(AVRO_VERSION_RESULT)
-#        message(FATAL_ERROR "Cannot determine Avro  version projekt number")
-#    endif(AVRO_VERSION_RESULT)
-#
-##    execute_process(COMMAND ${CMAKE_CURRENT_SOURCE_DIR}/version.sh libtool
-##        WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}
-#     execuute_process(COMMAND /usr/home/BachelorThesis/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/version.sh libtool
-#         WORKING_DIRECTORY /usr/home/BachelorThesis/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/
-#        RESULT_VARIABLE LIBAVRO_VERSION_RESULT
-#        OUTPUT_VARIABLE LIBAVRO_VERSION
-#        OUTPUT_STRIP_TRAILING_WHITESPACE)
-#    if(LIBAVRO_VERSION_RESULT)
-#        message(FATAL_ERROR "Cannot determine libavro version libtool number")
-#    endif(LIBAVRO_VERSION_RESULT)
+    execute_process(COMMAND ${CMAKE_CURRENT_SOURCE_DIR}/version.sh project
+        WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}
+    # execute_process(COMMAND /usr/home/BachelorThesis/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/version.sh project
+     #    WORKING_DIRECTORY /usr/home/BachelorThesis/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/
+        RESULT_VARIABLE AVRO_VERSION_RESULT
+        OUTPUT_VARIABLE AVRO_VERSION
+        OUTPUT_STRIP_TRAILING_WHITESPACE)
+    if(AVRO_VERSION_RESULT)
+        message(FATAL_ERROR "Cannot determine Avro  version projekt number")
+    endif(AVRO_VERSION_RESULT)
+
+    execute_process(COMMAND ${CMAKE_CURRENT_SOURCE_DIR}/version.sh libtool
+        WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}
+  #   execuute_process(COMMAND /usr/home/BachelorThesis/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/version.sh libtool
+   #      WORKING_DIRECTORY /usr/home/BachelorThesis/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/
+        RESULT_VARIABLE LIBAVRO_VERSION_RESULT
+        OUTPUT_VARIABLE LIBAVRO_VERSION
+        OUTPUT_STRIP_TRAILING_WHITESPACE)
+    if(LIBAVRO_VERSION_RESULT)
+        message(FATAL_ERROR "Cannot determine libavro version libtool number")
+    endif(LIBAVRO_VERSION_RESULT)
 set(AVRO_VERSION "22:0:0")
 set(LIBAVRO_VERSION_RESULT "22:0:0")
 else(UNIX)
@@ -63,28 +63,28 @@ endif(UNIX)
 #-----------------------------------------------------------------------
 # Extract major.minor.patch from version number
 
-#if (UNIX)
-	#    string(REGEX REPLACE "([0-9]+)\\..*"
-	#        "\\1"
-	#        AVRO_MAJOR_VERSION
-	#        ${AVRO_VERSION}
-	#    )
-	#    string(REGEX REPLACE ".*\\.([0-9]+)\\..*"
-	#        "\\1"
-	#        AVRO_MINOR_VERSION
-	#        ${AVRO_VERSION}
-	#    )
-	#    string(REGEX REPLACE ".*\\..*\\.([0-9]+).*"
-	#        "\\1"
-	#        AVRO_PATCH_VERSION
-	#        ${AVRO_VERSION}
-	#    )
-	#    string(REGEX REPLACE ".*\\..*\\.[0-9]+(.*)"
-	#        "\\1"
-	#        AVRO_VERSION_EXTENSION
-	#        ${AVRO_VERSION}
-	#    )
-	#endif(UNIX)
+if (UNIX)
+	    string(REGEX REPLACE "([0-9]+)\\..*"
+	        "\\1"
+	        AVRO_MAJOR_VERSION
+	        ${AVRO_VERSION}
+	    )
+	    string(REGEX REPLACE ".*\\.([0-9]+)\\..*"
+	        "\\1"
+	        AVRO_MINOR_VERSION
+	        ${AVRO_VERSION}
+	    )
+	    string(REGEX REPLACE ".*\\..*\\.([0-9]+).*"
+	        "\\1"
+	        AVRO_PATCH_VERSION
+	        ${AVRO_VERSION}
+	    )
+	    string(REGEX REPLACE ".*\\..*\\.[0-9]+(.*)"
+	        "\\1"
+	        AVRO_VERSION_EXTENSION
+	        ${AVRO_VERSION}
+	    )
+	endif(UNIX)
 
 #-----------------------------------------------------------------------
 # Source package support

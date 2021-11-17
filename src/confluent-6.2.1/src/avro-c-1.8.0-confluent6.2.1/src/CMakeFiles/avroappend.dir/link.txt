@@ -1,0 +1,1 @@
+/usr/bin/cc -O2 -g -DNDEBUG CMakeFiles/avroappend.dir/avroappend.o -o avroappend  libavro.a 

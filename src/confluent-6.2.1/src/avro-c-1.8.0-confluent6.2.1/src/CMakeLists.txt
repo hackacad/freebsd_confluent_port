@@ -16,7 +16,7 @@
 # specific language governing permissions and limitations
 # under the License.
 #
-
+set(CMAKE_VERBOSE_MAKEFILE ON)
 set(AVRO_SRC
     allocation.c
     array.c
@@ -81,7 +81,7 @@ source_group(Avro FILES ${AVRO_SRC})
 
 # The version.sh script gives us a SOVERSION that uses colon as a
 # separator; we need periods.
-
+set(LIBAVRO_VERSION "22:0.0")
 string(REPLACE ":" "." LIBAVRO_DOT_VERSION ${LIBAVRO_VERSION})
 
 add_library(avro-static STATIC ${AVRO_SRC})

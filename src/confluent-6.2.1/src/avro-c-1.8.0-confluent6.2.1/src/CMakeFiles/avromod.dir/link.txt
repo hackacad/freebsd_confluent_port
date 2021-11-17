@@ -1,0 +1,1 @@
+/usr/bin/cc -O2 -g -DNDEBUG CMakeFiles/avromod.dir/avromod.o -o avromod  libavro.a 
