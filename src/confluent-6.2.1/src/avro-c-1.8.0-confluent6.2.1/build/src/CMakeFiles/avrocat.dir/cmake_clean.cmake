@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/avrocat.dir/avrocat.o"
-  "CMakeFiles/avrocat.dir/avrocat.o.d"
   "avrocat"
   "avrocat.pdb"
 )

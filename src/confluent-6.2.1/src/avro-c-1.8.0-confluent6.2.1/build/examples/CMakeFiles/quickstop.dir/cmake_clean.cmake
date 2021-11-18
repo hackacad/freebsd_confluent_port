@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/quickstop.dir/quickstop.o"
-  "CMakeFiles/quickstop.dir/quickstop.o.d"
   "quickstop"
   "quickstop.pdb"
 )

@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/test_data_structures.dir/test_data_structures.o"
-  "CMakeFiles/test_data_structures.dir/test_data_structures.o.d"
   "test_data_structures"
   "test_data_structures.pdb"
 )

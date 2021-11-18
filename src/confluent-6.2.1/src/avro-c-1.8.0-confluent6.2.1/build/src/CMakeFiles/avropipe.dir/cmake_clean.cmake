@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/avropipe.dir/avropipe.o"
-  "CMakeFiles/avropipe.dir/avropipe.o.d"
   "avropipe"
   "avropipe.pdb"
 )

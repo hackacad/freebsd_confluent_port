@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/test_avro_1237.dir/test_avro_1237.o"
-  "CMakeFiles/test_avro_1237.dir/test_avro_1237.o.d"
   "test_avro_1237"
   "test_avro_1237.pdb"
 )

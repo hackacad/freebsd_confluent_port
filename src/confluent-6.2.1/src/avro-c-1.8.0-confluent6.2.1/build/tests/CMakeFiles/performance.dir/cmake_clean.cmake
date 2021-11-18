@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/performance.dir/performance.o"
-  "CMakeFiles/performance.dir/performance.o.d"
   "performance"
   "performance.pdb"
 )

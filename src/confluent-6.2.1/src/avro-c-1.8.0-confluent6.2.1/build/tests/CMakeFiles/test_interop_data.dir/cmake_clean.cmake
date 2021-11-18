@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/test_interop_data.dir/test_interop_data.o"
-  "CMakeFiles/test_interop_data.dir/test_interop_data.o.d"
   "test_interop_data"
   "test_interop_data.pdb"
 )

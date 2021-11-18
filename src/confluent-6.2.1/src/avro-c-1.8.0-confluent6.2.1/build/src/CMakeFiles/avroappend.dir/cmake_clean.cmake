@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/avroappend.dir/avroappend.o"
-  "CMakeFiles/avroappend.dir/avroappend.o.d"
   "avroappend"
   "avroappend.pdb"
 )

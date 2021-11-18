@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/avromod.dir/avromod.o"
-  "CMakeFiles/avromod.dir/avromod.o.d"
   "avromod"
   "avromod.pdb"
 )

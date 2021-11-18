@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/test_refcount.dir/test_refcount.o"
-  "CMakeFiles/test_refcount.dir/test_refcount.o.d"
   "test_refcount"
   "test_refcount.pdb"
 )

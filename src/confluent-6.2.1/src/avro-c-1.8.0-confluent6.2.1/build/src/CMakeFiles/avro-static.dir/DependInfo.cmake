@@ -1,48 +1,57 @@
-
-# Consider dependencies only in project.
-set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
-
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
+  "C"
+  )
+# The set of files for implicit dependencies of each language:
+set(CMAKE_DEPENDS_CHECK_C
+  "/home/andy/bachelor_arbeit/src/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/src/allocation.c" "/home/andy/bachelor_arbeit/src/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/build/src/CMakeFiles/avro-static.dir/allocation.o"
+  "/home/andy/bachelor_arbeit/src/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/src/array.c" "/home/andy/bachelor_arbeit/src/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/build/src/CMakeFiles/avro-static.dir/array.o"
+  "/home/andy/bachelor_arbeit/src/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/src/codec.c" "/home/andy/bachelor_arbeit/src/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/build/src/CMakeFiles/avro-static.dir/codec.o"
+  "/home/andy/bachelor_arbeit/src/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/src/consume-binary.c" "/home/andy/bachelor_arbeit/src/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/build/src/CMakeFiles/avro-static.dir/consume-binary.o"
+  "/home/andy/bachelor_arbeit/src/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/src/consumer.c" "/home/andy/bachelor_arbeit/src/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/build/src/CMakeFiles/avro-static.dir/consumer.o"
+  "/home/andy/bachelor_arbeit/src/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/src/datafile.c" "/home/andy/bachelor_arbeit/src/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/build/src/CMakeFiles/avro-static.dir/datafile.o"
+  "/home/andy/bachelor_arbeit/src/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/src/datum.c" "/home/andy/bachelor_arbeit/src/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/build/src/CMakeFiles/avro-static.dir/datum.o"
+  "/home/andy/bachelor_arbeit/src/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/src/datum_equal.c" "/home/andy/bachelor_arbeit/src/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/build/src/CMakeFiles/avro-static.dir/datum_equal.o"
+  "/home/andy/bachelor_arbeit/src/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/src/datum_read.c" "/home/andy/bachelor_arbeit/src/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/build/src/CMakeFiles/avro-static.dir/datum_read.o"
+  "/home/andy/bachelor_arbeit/src/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/src/datum_size.c" "/home/andy/bachelor_arbeit/src/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/build/src/CMakeFiles/avro-static.dir/datum_size.o"
+  "/home/andy/bachelor_arbeit/src/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/src/datum_skip.c" "/home/andy/bachelor_arbeit/src/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/build/src/CMakeFiles/avro-static.dir/datum_skip.o"
+  "/home/andy/bachelor_arbeit/src/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/src/datum_validate.c" "/home/andy/bachelor_arbeit/src/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/build/src/CMakeFiles/avro-static.dir/datum_validate.o"
+  "/home/andy/bachelor_arbeit/src/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/src/datum_value.c" "/home/andy/bachelor_arbeit/src/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/build/src/CMakeFiles/avro-static.dir/datum_value.o"
+  "/home/andy/bachelor_arbeit/src/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/src/datum_write.c" "/home/andy/bachelor_arbeit/src/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/build/src/CMakeFiles/avro-static.dir/datum_write.o"
+  "/home/andy/bachelor_arbeit/src/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/src/dump.c" "/home/andy/bachelor_arbeit/src/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/build/src/CMakeFiles/avro-static.dir/dump.o"
+  "/home/andy/bachelor_arbeit/src/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/src/encoding_binary.c" "/home/andy/bachelor_arbeit/src/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/build/src/CMakeFiles/avro-static.dir/encoding_binary.o"
+  "/home/andy/bachelor_arbeit/src/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/src/errors.c" "/home/andy/bachelor_arbeit/src/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/build/src/CMakeFiles/avro-static.dir/errors.o"
+  "/home/andy/bachelor_arbeit/src/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/src/generic.c" "/home/andy/bachelor_arbeit/src/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/build/src/CMakeFiles/avro-static.dir/generic.o"
+  "/home/andy/bachelor_arbeit/src/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/src/io.c" "/home/andy/bachelor_arbeit/src/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/build/src/CMakeFiles/avro-static.dir/io.o"
+  "/home/andy/bachelor_arbeit/src/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/src/map.c" "/home/andy/bachelor_arbeit/src/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/build/src/CMakeFiles/avro-static.dir/map.o"
+  "/home/andy/bachelor_arbeit/src/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/src/memoize.c" "/home/andy/bachelor_arbeit/src/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/build/src/CMakeFiles/avro-static.dir/memoize.o"
+  "/home/andy/bachelor_arbeit/src/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/src/resolved-reader.c" "/home/andy/bachelor_arbeit/src/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/build/src/CMakeFiles/avro-static.dir/resolved-reader.o"
+  "/home/andy/bachelor_arbeit/src/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/src/resolved-writer.c" "/home/andy/bachelor_arbeit/src/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/build/src/CMakeFiles/avro-static.dir/resolved-writer.o"
+  "/home/andy/bachelor_arbeit/src/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/src/resolver.c" "/home/andy/bachelor_arbeit/src/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/build/src/CMakeFiles/avro-static.dir/resolver.o"
+  "/home/andy/bachelor_arbeit/src/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/src/schema.c" "/home/andy/bachelor_arbeit/src/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/build/src/CMakeFiles/avro-static.dir/schema.o"
+  "/home/andy/bachelor_arbeit/src/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/src/schema_equal.c" "/home/andy/bachelor_arbeit/src/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/build/src/CMakeFiles/avro-static.dir/schema_equal.o"
+  "/home/andy/bachelor_arbeit/src/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/src/st.c" "/home/andy/bachelor_arbeit/src/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/build/src/CMakeFiles/avro-static.dir/st.o"
+  "/home/andy/bachelor_arbeit/src/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/src/string.c" "/home/andy/bachelor_arbeit/src/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/build/src/CMakeFiles/avro-static.dir/string.o"
+  "/home/andy/bachelor_arbeit/src/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/src/value-hash.c" "/home/andy/bachelor_arbeit/src/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/build/src/CMakeFiles/avro-static.dir/value-hash.o"
+  "/home/andy/bachelor_arbeit/src/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/src/value-json.c" "/home/andy/bachelor_arbeit/src/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/build/src/CMakeFiles/avro-static.dir/value-json.o"
+  "/home/andy/bachelor_arbeit/src/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/src/value-read.c" "/home/andy/bachelor_arbeit/src/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/build/src/CMakeFiles/avro-static.dir/value-read.o"
+  "/home/andy/bachelor_arbeit/src/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/src/value-sizeof.c" "/home/andy/bachelor_arbeit/src/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/build/src/CMakeFiles/avro-static.dir/value-sizeof.o"
+  "/home/andy/bachelor_arbeit/src/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/src/value-write.c" "/home/andy/bachelor_arbeit/src/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/build/src/CMakeFiles/avro-static.dir/value-write.o"
+  "/home/andy/bachelor_arbeit/src/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/src/value.c" "/home/andy/bachelor_arbeit/src/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/build/src/CMakeFiles/avro-static.dir/value.o"
+  "/home/andy/bachelor_arbeit/src/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/src/wrapped-buffer.c" "/home/andy/bachelor_arbeit/src/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/build/src/CMakeFiles/avro-static.dir/wrapped-buffer.o"
+  )
+set(CMAKE_C_COMPILER_ID "GNU")
+
+# Preprocessor definitions for this target.
+set(CMAKE_TARGET_DEFINITIONS_C
+  "DEFLATE_CODEC"
+  "THREADSAFE"
+  "_REENTRANT"
   )
 
-# The set of dependency files which are needed:
-set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/BachelorThesis/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/src/allocation.c" "src/CMakeFiles/avro-static.dir/allocation.o" "gcc" "src/CMakeFiles/avro-static.dir/allocation.o.d"
-  "/home/BachelorThesis/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/src/array.c" "src/CMakeFiles/avro-static.dir/array.o" "gcc" "src/CMakeFiles/avro-static.dir/array.o.d"
-  "/home/BachelorThesis/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/src/codec.c" "src/CMakeFiles/avro-static.dir/codec.o" "gcc" "src/CMakeFiles/avro-static.dir/codec.o.d"
-  "/home/BachelorThesis/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/src/consume-binary.c" "src/CMakeFiles/avro-static.dir/consume-binary.o" "gcc" "src/CMakeFiles/avro-static.dir/consume-binary.o.d"
-  "/home/BachelorThesis/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/src/consumer.c" "src/CMakeFiles/avro-static.dir/consumer.o" "gcc" "src/CMakeFiles/avro-static.dir/consumer.o.d"
-  "/home/BachelorThesis/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/src/datafile.c" "src/CMakeFiles/avro-static.dir/datafile.o" "gcc" "src/CMakeFiles/avro-static.dir/datafile.o.d"
-  "/home/BachelorThesis/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/src/datum.c" "src/CMakeFiles/avro-static.dir/datum.o" "gcc" "src/CMakeFiles/avro-static.dir/datum.o.d"
-  "/home/BachelorThesis/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/src/datum_equal.c" "src/CMakeFiles/avro-static.dir/datum_equal.o" "gcc" "src/CMakeFiles/avro-static.dir/datum_equal.o.d"
-  "/home/BachelorThesis/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/src/datum_read.c" "src/CMakeFiles/avro-static.dir/datum_read.o" "gcc" "src/CMakeFiles/avro-static.dir/datum_read.o.d"
-  "/home/BachelorThesis/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/src/datum_size.c" "src/CMakeFiles/avro-static.dir/datum_size.o" "gcc" "src/CMakeFiles/avro-static.dir/datum_size.o.d"
-  "/home/BachelorThesis/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/src/datum_skip.c" "src/CMakeFiles/avro-static.dir/datum_skip.o" "gcc" "src/CMakeFiles/avro-static.dir/datum_skip.o.d"
-  "/home/BachelorThesis/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/src/datum_validate.c" "src/CMakeFiles/avro-static.dir/datum_validate.o" "gcc" "src/CMakeFiles/avro-static.dir/datum_validate.o.d"
-  "/home/BachelorThesis/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/src/datum_value.c" "src/CMakeFiles/avro-static.dir/datum_value.o" "gcc" "src/CMakeFiles/avro-static.dir/datum_value.o.d"
-  "/home/BachelorThesis/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/src/datum_write.c" "src/CMakeFiles/avro-static.dir/datum_write.o" "gcc" "src/CMakeFiles/avro-static.dir/datum_write.o.d"
-  "/home/BachelorThesis/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/src/dump.c" "src/CMakeFiles/avro-static.dir/dump.o" "gcc" "src/CMakeFiles/avro-static.dir/dump.o.d"
-  "/home/BachelorThesis/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/src/encoding_binary.c" "src/CMakeFiles/avro-static.dir/encoding_binary.o" "gcc" "src/CMakeFiles/avro-static.dir/encoding_binary.o.d"
-  "/home/BachelorThesis/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/src/errors.c" "src/CMakeFiles/avro-static.dir/errors.o" "gcc" "src/CMakeFiles/avro-static.dir/errors.o.d"
-  "/home/BachelorThesis/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/src/generic.c" "src/CMakeFiles/avro-static.dir/generic.o" "gcc" "src/CMakeFiles/avro-static.dir/generic.o.d"
-  "/home/BachelorThesis/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/src/io.c" "src/CMakeFiles/avro-static.dir/io.o" "gcc" "src/CMakeFiles/avro-static.dir/io.o.d"
-  "/home/BachelorThesis/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/src/map.c" "src/CMakeFiles/avro-static.dir/map.o" "gcc" "src/CMakeFiles/avro-static.dir/map.o.d"
-  "/home/BachelorThesis/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/src/memoize.c" "src/CMakeFiles/avro-static.dir/memoize.o" "gcc" "src/CMakeFiles/avro-static.dir/memoize.o.d"
-  "/home/BachelorThesis/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/src/resolved-reader.c" "src/CMakeFiles/avro-static.dir/resolved-reader.o" "gcc" "src/CMakeFiles/avro-static.dir/resolved-reader.o.d"
-  "/home/BachelorThesis/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/src/resolved-writer.c" "src/CMakeFiles/avro-static.dir/resolved-writer.o" "gcc" "src/CMakeFiles/avro-static.dir/resolved-writer.o.d"
-  "/home/BachelorThesis/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/src/resolver.c" "src/CMakeFiles/avro-static.dir/resolver.o" "gcc" "src/CMakeFiles/avro-static.dir/resolver.o.d"
-  "/home/BachelorThesis/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/src/schema.c" "src/CMakeFiles/avro-static.dir/schema.o" "gcc" "src/CMakeFiles/avro-static.dir/schema.o.d"
-  "/home/BachelorThesis/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/src/schema_equal.c" "src/CMakeFiles/avro-static.dir/schema_equal.o" "gcc" "src/CMakeFiles/avro-static.dir/schema_equal.o.d"
-  "/home/BachelorThesis/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/src/st.c" "src/CMakeFiles/avro-static.dir/st.o" "gcc" "src/CMakeFiles/avro-static.dir/st.o.d"
-  "/home/BachelorThesis/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/src/string.c" "src/CMakeFiles/avro-static.dir/string.o" "gcc" "src/CMakeFiles/avro-static.dir/string.o.d"
-  "/home/BachelorThesis/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/src/value-hash.c" "src/CMakeFiles/avro-static.dir/value-hash.o" "gcc" "src/CMakeFiles/avro-static.dir/value-hash.o.d"
-  "/home/BachelorThesis/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/src/value-json.c" "src/CMakeFiles/avro-static.dir/value-json.o" "gcc" "src/CMakeFiles/avro-static.dir/value-json.o.d"
-  "/home/BachelorThesis/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/src/value-read.c" "src/CMakeFiles/avro-static.dir/value-read.o" "gcc" "src/CMakeFiles/avro-static.dir/value-read.o.d"
-  "/home/BachelorThesis/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/src/value-sizeof.c" "src/CMakeFiles/avro-static.dir/value-sizeof.o" "gcc" "src/CMakeFiles/avro-static.dir/value-sizeof.o.d"
-  "/home/BachelorThesis/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/src/value-write.c" "src/CMakeFiles/avro-static.dir/value-write.o" "gcc" "src/CMakeFiles/avro-static.dir/value-write.o.d"
-  "/home/BachelorThesis/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/src/value.c" "src/CMakeFiles/avro-static.dir/value.o" "gcc" "src/CMakeFiles/avro-static.dir/value.o.d"
-  "/home/BachelorThesis/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/src/wrapped-buffer.c" "src/CMakeFiles/avro-static.dir/wrapped-buffer.o" "gcc" "src/CMakeFiles/avro-static.dir/wrapped-buffer.o.d"
+# The include file search paths:
+set(CMAKE_C_TARGET_INCLUDE_PATH
+  "../src"
   )
 
 # Targets to which this target links.
