@@ -1,1 +1,0 @@
-/usr/bin/cc -O2 -g -DNDEBUG  -rdynamic CMakeFiles/generate_interop_data.dir/generate_interop_data.o  -o generate_interop_data   -L/home/andy/bachelor_arbeit/src/confluent-6.2.1/src/avro-c-1.8.0-confluent6.2.1/build/src  -L/usr/local/lib  -Wl,-rpath,/usr/local/lib ../src/libavro.a -ljansson /usr/local/lib/libz.so -lpthread 
