@@ -1,0 +1,5 @@
+usr/local/bin/emulators/linux_base-c7
+usr/local/bin/openjdk8
+usr/local/bin/curl
+usr/local/bin/bash
+@dirrm /var/confluent
