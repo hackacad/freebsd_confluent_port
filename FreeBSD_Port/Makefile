@@ -1,11 +1,11 @@
-
+# Created by: Andreas Kirchner <andreas.kirchner@stud.h-da.de>
 PORTNAME=       confluent
 DISTVERSION=    7.0.1
 CATEGORIES=     databases
 MASTER_SITES=   http://packages.confluent.io/archive/7.0/ 
 DISTNAME=       ${PORTNAME}-${DISTVERSION}
 
-MAINTAINER=     hello@world.org
+MAINTAINER=     andreas.kirchner@stud.h-da.de
 COMMENT=        Confluent makes it easy to connect your apps, systems, and your entire organization with real-time data flow and processing.
 
 LICENSE=        APACHE20
@@ -43,27 +43,19 @@ SHEBANG_FILES= bin/confluent bin/confluent-hub bin/confluent-rebalancer bin/conn
         
 
 do-install:
-	#The Konfiguration for fstab are in the linux:c7 port
-	#${MKDIR} /home/andy/portTest/
-	#${CP} -r ${WRKSRC} /home/andy/portTest/
-	#${EXEC} brandelf -t Linux /home/andy/portTest/confluent-7.0.1/libexec/cli/linux_amd64/confluent
-	#${EXEC} brandelf -t Linux /home/andy/portTest/confluent-7.0.1/bin/*
-	#${MKDIR} /home/andy/portTest/confluent-7.0.1/libexec/cli/freebsd_amd64/
-	#${CP} /home/andy/portTest/confluent-7.0.1/libexec/cli/linux_amd64/confluent /home/andy/portTest/confluent-7.0.1/libexec/cli/freebsd_amd64/
-	#${SED} -e '16i\ freebsd/amd64) found=0 ;;' >> /home/andy/portTest/confluent-7.0.1/bin/confluent
-
-	#${EXEC} /home/andy/portTest/confluent-7.0.1/bin/confluent-hub install --no-prompt confluentinc/kafka-connect-datagen:latest	
+	#Load of linux Kernel and emulator configs are in the linux:c7 port	
 	#Configure the Confluent Directory
 	${EXEC} brandelf -t Linux ${WRKSRC}/libexec/cli/linux_amd64/confluent
 	${MKDIR} ${WRKSRC}/libexec/cli/freebsd_amd64/
 	${CP} ${WRKSRC}/libexec/cli/linux_amd64/confluent ${WRKSRC}/libexec/cli/freebsd_amd64/
-	#${SED} -e '16i\ freebsd/amd64) found=0 ;;' >> ${WRKSRC}/bin/confluent
-	${CP} -r ${WRKSRC} /home/andy/bash_fix/
-	${EXEC}  /home/andy/bash_fix/confluent-7.0.1/bin/confluent-hub install --no-prompt confluentinc/kafka-connect-datagen:latest
 
+	#${SED} -i '' -e "16i\ freebsd/amd64) found=0 ;;" >> ${WRKSRC}/bin/confluent
+	${CP} -r ${WRKSRC} ${PREFIX}
 
+	${ECHO} "PATH=${PATH}:${PREFIX}/confluent-7.0.1/bin/" > /.bashrc
+	${ECHO} "export PATH" >>/.bashrc
+	${ECHO} "CONFLUENT_HOME=${PREFIX}/confluent-7.0.1" >>/.bashrc
+	${ECHO} "export CONFLUENT_HOME" >>/.bashrc
 
 	
-
-
 .include <bsd.port.mk>

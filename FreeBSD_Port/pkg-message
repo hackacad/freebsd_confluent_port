@@ -1,12 +1,14 @@
 [
 { type: install
   message: <<EOM
-Add Following lines to the /etc/fstab file
-fdesc           /dev/fd                 fdescfs         rw               0      0
-proc            /proc                   procfs          rw               0      0
-lineprocfs      /compat/linux/proc      linprocfs       rw               0      0
-linsysfs        /compat/linux/sys       linsysfs        rw               0      0
-tmpfs           /compat/linux/dev/shm   tmpfs           rw,mode=1777     0      0
+Confluent has been installed, check that the Linux and Linux64 kernel modules have been loaded and the mountpoints for them have been created.
+Also add the host name and its IP to the file /etc/hosts 
+For Confluent to work the following value must be entered in line 16 'freebsd/amd64) found=0 ;;'.
+Have fun with your FreeBSD Confluent version
 EOM
 }
+{type: remove
+  message: <<EOM Confluent was successfully removed, remember to remove the entries in the file /etc/fstab/. EOM
+}
 ]
+
