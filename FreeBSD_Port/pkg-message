@@ -15,7 +15,13 @@ setenv PATH $PATH":"'/usr/local/confluent-7.0.1/bin/'
 EOM
 }
 {type: remove
-  message: <<EOM Confluent was successfully removed, remember to remove the entries in the file /etc/fstab/. EOM
+  message: <<EOM 
+Confluent was successfully removed, remember to remove the entries in the file /etc/fstab/.
+Also remember to remove the Confluent files if you wish. You can do this with the following command.
+
+rm -r /usr/local/confluent-7.0.1/
+
+EOM
 }
 ]
 
