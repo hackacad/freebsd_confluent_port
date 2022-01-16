@@ -12,6 +12,9 @@ In order to run Confluent outside the installation directory, the following comm
 
 setenv CONFLUENT_HOME /usr/local/confluent-7.0.1/
 setenv PATH $PATH":"'/usr/local/confluent-7.0.1/bin/'
+
+If the Kafka server cannot start, the hostname and the host IP must be entered in the file /etc/hosts
+
 EOM
 }
 {type: remove
