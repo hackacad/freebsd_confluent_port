@@ -43,19 +43,18 @@ SHEBANG_FILES= bin/confluent bin/confluent-hub bin/confluent-rebalancer bin/conn
         
 
 do-install:
-	#Load of linux Kernel and emulator configs are in the linux:c7 port	
-	#Configure the Confluent Directory
+	#Loading the Linux kernel and Linux binary compatibility cofigurations are defined in the linux:c7 port	
+	
+	#Adaptation of the Confluent directory 
 	${EXEC} brandelf -t Linux ${WRKSRC}/libexec/cli/linux_amd64/confluent
 	${MKDIR} ${WRKSRC}/libexec/cli/freebsd_amd64/
 	${CP} ${WRKSRC}/libexec/cli/linux_amd64/confluent ${WRKSRC}/libexec/cli/freebsd_amd64/
-
-	#${SED} -i '' -e "16i\ freebsd/amd64) found=0 ;;" >> ${WRKSRC}/bin/confluent
+	
+	#Deleting unused files and directories 
+	${RM} -rf ${WRKSRC}/src
+	${RM} -rf ${WRKSRC}/lib
+	
+	#Copying the modified Confluent directory to /usr/local/ 
 	${CP} -r ${WRKSRC} ${PREFIX}
-
-	${ECHO} "PATH=${PATH}:${PREFIX}/confluent-7.0.1/bin/" > /.bashrc
-	${ECHO} "export PATH" >>/.bashrc
-	${ECHO} "CONFLUENT_HOME=${PREFIX}/confluent-7.0.1" >>/.bashrc
-	${ECHO} "export CONFLUENT_HOME" >>/.bashrc
-
 	
 .include <bsd.port.mk>
