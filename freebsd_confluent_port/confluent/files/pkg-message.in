@@ -1,14 +1,19 @@
 [
 { type: install
-  message: << EOM
+  message: <<EOM
+!!! INSTALL NOTICE !!!
 Confluent has been installed, check that the Linux and Linux64 kernel modules have been loaded and the mountpoints for them have been created.
-Also add the host name and its IP to the file /etc/hosts 
+
+kldload linux && kldload linux64
+
+Also add the host name and its IP to the file /etc/hosts
+
 For Confluent to work the following value must be entered in line 16 'freebsd/amd64) found=0 ;;'.
 
 sed -i '' -e '16i\
 freebsd/amd64) found=0 ;;' /usr/local/confluent-7.0.1/bin/confluent
 
-In order to run Confluent outside the installation directory, the following commands must be executed. 
+In order to run Confluent outside the installation directory, the following commands must be executed.
 
 setenv CONFLUENT_HOME /usr/local/confluent-7.0.1/
 setenv PATH $PATH":"'/usr/local/confluent-7.0.1/bin/'
@@ -18,8 +23,9 @@ If the Kafka server cannot start, the hostname and the host IP must be entered i
 EOM
 }
 { type: remove
-  message: << EOM 
-Confluent was successfully removed, remember to remove the entries in the file /etc/fstab/.
+  message: <<EOM
+!!! UNINSTALL NOTICE !!!
+Confluent was removed, remember to remove the entries in the file /etc/fstab/.
 Also remember to remove the Confluent files if you wish. You can do this with the following command.
 
 rm -r /usr/local/confluent-7.0.1/
@@ -27,4 +33,5 @@ rm -r /usr/local/confluent-7.0.1/
 EOM
 }
 ]
+
 

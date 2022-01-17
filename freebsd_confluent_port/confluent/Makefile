@@ -38,13 +38,13 @@ SHEBANG_FILES= bin/confluent bin/confluent-hub bin/confluent-rebalancer bin/conn
 	       bin/zookeeper-server-start bin/zookeeper-server-stop bin/zookeeper-shell 
 	 
 
-
+SUB_FILES= pkg-message
 
         
 
 do-install:
 	#Loading the Linux kernel and Linux binary compatibility cofigurations are defined in the linux:c7 port	
-	
+	#@${EXEC} kldload linux && kldload linux64
 	#Adaptation of the Confluent directory 
 	@${EXEC} brandelf -t Linux ${WRKSRC}/libexec/cli/linux_amd64/confluent
 	@${MKDIR} ${WRKSRC}/libexec/cli/freebsd_amd64/
