@@ -6,13 +6,6 @@ Confluent has been installed, check that the Linux and Linux64 kernel modules ha
 
 kldload linux && kldload linux64
 
-Also add the host name and its IP to the file /etc/hosts
-
-For Confluent to work the following value must be entered in line 16 'freebsd/amd64) found=0 ;;'.
-
-sed -i '' -e '16i\
-freebsd/amd64) found=0 ;;' /usr/local/confluent-7.0.1/bin/confluent
-
 In order to run Confluent outside the installation directory, the following commands must be executed.
 
 setenv CONFLUENT_HOME /usr/local/confluent-7.0.1/

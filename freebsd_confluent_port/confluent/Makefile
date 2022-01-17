@@ -49,7 +49,7 @@ do-install:
 	@${EXEC} brandelf -t Linux ${WRKSRC}/libexec/cli/linux_amd64/confluent
 	@${MKDIR} ${WRKSRC}/libexec/cli/freebsd_amd64/
 	@${CP} ${WRKSRC}/libexec/cli/linux_amd64/confluent ${WRKSRC}/libexec/cli/freebsd_amd64/
-	#${REINPLACE_CMD} -e 's|patch-confluent.diff|g' ${WORKSRC}/bin/confluent
+	${REINPLACE_CMD} -e 's|windows/amd64) found=0 ;;|freebsd/amd64) found=0 ;;|g' ${WRKSRC}/bin/confluent
 	#Deleting unused files and directories 
 	@${RM} -rf ${WRKSRC}/src
 	@${RM} -rf ${WRKSRC}/lib
