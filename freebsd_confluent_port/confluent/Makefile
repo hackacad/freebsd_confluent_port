@@ -46,15 +46,15 @@ do-install:
 	#Loading the Linux kernel and Linux binary compatibility cofigurations are defined in the linux:c7 port	
 	
 	#Adaptation of the Confluent directory 
-	${EXEC} brandelf -t Linux ${WRKSRC}/libexec/cli/linux_amd64/confluent
-	${MKDIR} ${WRKSRC}/libexec/cli/freebsd_amd64/
-	${CP} ${WRKSRC}/libexec/cli/linux_amd64/confluent ${WRKSRC}/libexec/cli/freebsd_amd64/
-	
+	@${EXEC} brandelf -t Linux ${WRKSRC}/libexec/cli/linux_amd64/confluent
+	@${MKDIR} ${WRKSRC}/libexec/cli/freebsd_amd64/
+	@${CP} ${WRKSRC}/libexec/cli/linux_amd64/confluent ${WRKSRC}/libexec/cli/freebsd_amd64/
+	#${REINPLACE_CMD} -e 's|patch-confluent.diff|g' ${WORKSRC}/bin/confluent
 	#Deleting unused files and directories 
-	${RM} -rf ${WRKSRC}/src
-	${RM} -rf ${WRKSRC}/lib
+	@${RM} -rf ${WRKSRC}/src
+	@${RM} -rf ${WRKSRC}/lib
 	
 	#Copying the modified Confluent directory to /usr/local/ 
-	${CP} -r ${WRKSRC} ${PREFIX}
+	@${CP} -r ${WRKSRC} ${PREFIX}
 	
 .include <bsd.port.mk>
