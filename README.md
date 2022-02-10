@@ -1,7 +1,7 @@
 # FreeBSD Confluent Port
 This port allows the event streaming platform Confluent to run on FreeBSD. For the operation the FreeBSD Linux Binary Compatibility is used.
 
-## Getting Started 
+## Getting Started :rocket:
 
 The confluent directory must be copied to /usr/ports/database and changed into it. To the Finally you just have to run #make install clean and follow the instructions of the of the pkg-message. Now the port is installed and can be used. 
 
@@ -46,7 +46,7 @@ https://docs.confluent.io/platform/current/installation/installing_cp/zip-tar.ht
 ```
 
 ## Built With
-* [FreeBSD Ports] (https://docs.freebsd.org/en/books/porters-handbook/) - framework
+* [FreeBSD Ports](https://docs.freebsd.org/en/books/porters-handbook/) - framework
 * [CMAKE](https://cmake.org/) - build tool
 * [bash](https://www.gnu.org/software/bash/) - shell
 * [linuxemu](https://docs.freebsd.org/en/books/handbook/linuxemu/) - Emulator
