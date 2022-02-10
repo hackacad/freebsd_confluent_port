@@ -24,7 +24,7 @@ git clone https://gitlab.com/AndyK1997/freebsd_confluent_port.git
 3. Add the port to the ports tree 
 
 ```bash
-mv freebsd_confluent_port/port/confluent /usr/ports/database/
+cp freebsd_confluent_port/port/confluent /usr/ports/database/
 ```
 
 4. Installing Confluent on your System 
