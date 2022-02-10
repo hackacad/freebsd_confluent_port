@@ -1,0 +1,98 @@
+/usr/local/confluent-7.0.1/bin/confluent 
+/usr/local/confluent-7.0.1/bin/confluent-hub 
+/usr/local/confluent-7.0.1/bin/confluent-rebalancer
+/usr/local/confluent-7.0.1/bin/connect-distributed 
+/usr/local/confluent-7.0.1/bin/connect-mirror-maker 
+/usr/local/confluent-7.0.1/bin/connect-mirror-maker 
+/usr/local/confluent-7.0.1/bin/connect-standalone 
+/usr/local/confluent-7.0.1/bin/control-center-3_0_0-reset 
+/usr/local/confluent-7.0.1/bin/control-center-3_0_1-reset 
+/usr/local/confluent-7.0.1/bin/control-center-cleanup 
+/usr/local/confluent-7.0.1/bin/control-center-console-consumer 
+/usr/local/confluent-7.0.1/bin/control-center-export
+/usr/local/confluent-7.0.1/bin/control-center-reset 
+/usr/local/confluent-7.0.1/bin/control-center-run-class 
+/usr/local/confluent-7.0.1/bin/control-center-set-acls 
+/usr/local/confluent-7.0.1/bin/control-center-start 
+/usr/local/confluent-7.0.1/bin/control-center-stop bin/kafka-acls
+/usr/local/confluent-7.0.1/bin/kafka-add-brokers 
+/usr/local/confluent-7.0.1/bin/kafka-api-start 
+/usr/local/confluent-7.0.1/bin/kafka-avro-console-consumer 
+/usr/local/confluent-7.0.1/bin/kafka-avro-console-producer 
+/usr/local/confluent-7.0.1/bin/kafka-broker-api-versions 
+/usr/local/confluent-7.0.1/bin/kafka-cluster
+/usr/local/confluent-7.0.1/bin/kafka-cluster-links 
+/usr/local/confluent-7.0.1/bin/kafka-configs 
+/usr/local/confluent-7.0.1/bin/kafka-console-consumer 
+/usr/local/confluent-7.0.1/bin/kafka-console-producer 
+/usr/local/confluent-7.0.1/bin/kafka-consumer-groups 
+/usr/local/confluent-7.0.1/bin/kafka-consumer-perf-test
+/usr/local/confluent-7.0.1/bin/kafka-delegation-tokens 
+/usr/local/confluent-7.0.1/bin/kafka-delete-records 
+/usr/local/confluent-7.0.1/bin/kafka-dump-log 
+/usr/local/confluent-7.0.1/bin/kafka-features 
+/usr/local/confluent-7.0.1/bin/kafka-get-offsets 
+/usr/local/confluent-7.0.1/bin/kafka-json-schema-console-consumer
+/usr/local/confluent-7.0.1/bin/kafka-json-schema-console-producer 
+/usr/local/confluent-7.0.1/bin/kafka-leader-election 
+/usr/local/confluent-7.0.1/bin/kafka-log-dirs 
+/usr/local/confluent-7.0.1/bin/kafka-metadata-shell 
+/usr/local/confluent-7.0.1/bin/kafka-mirror-maker 
+/usr/local/confluent-7.0.1/bin/kafka-mirrors
+/usr/local/confluent-7.0.1/bin/kafka-mqtt-run-class 
+/usr/local/confluent-7.0.1/bin/kafka-mqtt-start 
+/usr/local/confluent-7.0.1/bin/kafka-mqtt-stop 
+/usr/local/confluent-7.0.1/bin/kafka-preferred-replica-election 
+/usr/local/confluent-7.0.1/bin/kafka-producer-perf-test
+/usr/local/confluent-7.0.1/bin/kafka-protobuf-console-consumer 
+/usr/local/confluent-7.0.1/bin/kafka-protobuf-console-producer 
+/usr/local/confluent-7.0.1/bin/kafka-reassign-partitions 
+/usr/local/confluent-7.0.1/bin/kafka-rebalance-cluster 
+/usr/local/confluent-7.0.1/bin/kafka-remove-brokers 
+/usr/local/confluent-7.0.1/bin/kafka-replica-exclusions 
+/usr/local/confluent-7.0.1/bin/kafka-replica-status 
+/usr/local/confluent-7.0.1/bin/kafka-replica-verification 
+/usr/local/confluent-7.0.1/bin/kafka-rest-run-class 
+/usr/local/confluent-7.0.1/bin/kafka-rest-start 
+/usr/local/confluent-7.0.1/bin/kafka-rest-stop
+/usr/local/confluent-7.0.1/bin/kafka-rest-stop-service 
+/usr/local/confluent-7.0.1/bin/kafka-run-class 
+/usr/local/confluent-7.0.1/bin/kafka-server-start 
+/usr/local/confluent-7.0.1/bin/kafka-server-stop 
+/usr/local/confluent-7.0.1/bin/kafka-storage 
+/usr/local/confluent-7.0.1/bin/kafka-streams-application-reset
+/usr/local/confluent-7.0.1/bin/kafka-topics 
+/usr/local/confluent-7.0.1/bin/kafka-transactions 
+/usr/local/confluent-7.0.1/bin/kafka-verifiable-consumer 
+/usr/local/confluent-7.0.1/bin/kafka-verifiable-producer 
+/usr/local/confluent-7.0.1/bin/ksql 
+/usr/local/confluent-7.0.1/bin/ksql-datagen 
+/usr/local/confluent-7.0.1/bin/ksql-migrations
+/usr/local/confluent-7.0.1/bin/ksql-print-metrics 
+/usr/local/confluent-7.0.1/bin/ksql-restore-command-topic 
+/usr/local/confluent-7.0.1/bin/ksql-run-class 
+/usr/local/confluent-7.0.1/bin/ksql-server-start 
+/usr/local/confluent-7.0.1/bin/ksql-server-stop 
+/usr/local/confluent-7.0.1/bin/ksql-stop 
+/usr/local/confluent-7.0.1/bin/ksql-test-runner
+/usr/local/confluent-7.0.1/bin/replicator 
+/usr/local/confluent-7.0.1/bin/replicator-verifier 
+/usr/local/confluent-7.0.1/bin/schema-exporter 
+/usr/local/confluent-7.0.1/bin/schema-registry-run-class 
+/usr/local/confluent-7.0.1/bin/schema-registry-start 
+/usr/local/confluent-7.0.1/bin/schema-registry-stop
+/usr/local/confluent-7.0.1/bin/schema-registry-stop-service 
+/usr/local/confluent-7.0.1/bin/security-plugins-run-class 
+/usr/local/confluent-7.0.1/bin/sr-acl-cli bin/trogdor 
+/usr/local/confluent-7.0.1/bin/windows bin/zookeeper-security-migration
+/usr/local/confluent-7.0.1/bin/zookeeper-server-start 
+/usr/local/confluent-7.0.1/bin/zookeeper-server-stop 
+/usr/local/confluent-7.0.1/bin/zookeeper-shell
+
+@dirrm /usr/local/confluent-7.0.1/bin/
+@dirrm /usr/local/confluent-7.0.1/etc/
+@dirrm /usr/local/confluent-7.0.1/lib/
+@dirrm /usr/local/confluent-7.0.1/libexec/
+@dirrm /usr/local/confluent-7.0.1/share/
+@dirrm /usr/local/confluent-7.0.1/src/
+@dirrm /usr/local/confluent-7.0.1/
